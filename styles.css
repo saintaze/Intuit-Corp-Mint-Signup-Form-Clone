@@ -109,11 +109,11 @@ margin-bottom: 2.4rem;
   box-shadow: 0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(82,168,236,.6);
 }
 
-form button{
+.signup-btn{
   display: block;
   border-radius: 3px;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   width: 100%;
   border: none;
   color: white;
@@ -122,7 +122,11 @@ form button{
   margin-top: 3rem;
   box-shadow: 1px 1px 2px 0px rgba(0,0,0,.9);
 }
+.signup-btn img{
+  width: 1.2rem;
+  margin-right: .8rem; 
 
+}
 .tos {
   font-style: italic;
   font-size: 1.2rem;
@@ -216,5 +220,4 @@ button:hover {
  .signin-btn img{
     width: 1.2rem;
     margin-right: .8rem; 
-    /* align-self: center; */
  }
