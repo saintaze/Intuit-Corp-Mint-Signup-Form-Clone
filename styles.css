@@ -12,18 +12,18 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
-body{
-  background-color: rgb(236,238,241);
+body {
+  background-color: rgb(236, 238, 241);
   font-family: Avenir, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   color: #555;
   font-weight: normal;
-  letter-spacing: .4px;
+  letter-spacing: 0.4px;
 }
 
 .main-wrapper {
@@ -31,24 +31,25 @@ body{
   margin: 0 auto;
 }
 
-.signin-form{
+.signin-form {
   padding-top: 2.5rem;
-  border: 1px solid rgb(199,199,199);
+  border: 1px solid rgb(199, 199, 199);
   background-color: #fff;
   text-align: center;
-  
+
   border-radius: 2px;
 }
 
-.signin-form > a{
+.signin-form > a {
   display: block;
   line-height: 1.2;
   font-size: 1.2rem;
 }
 
-.signin-form h1, h2 {
-font-weight: normal;
-color: #444;
+.signin-form h1,
+h2 {
+  font-weight: normal;
+  color: #444;
 }
 
 .signin-form h1 {
@@ -63,20 +64,20 @@ color: #444;
 
 a {
   text-decoration: none;
-  color: #0077C5;
+  color: #0077c5;
   font-size: 1.2rem;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
 .form-group {
-margin-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
 }
 
 .form-group small {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: block;
   text-align: left;
   font-size: 1rem;
@@ -91,8 +92,8 @@ margin-bottom: 2.4rem;
   margin-bottom: 1.2rem;
 }
 
-.form-group input{
-  border: 1px solid rgb(193,197,200);
+.form-group input {
+  border: 1px solid rgb(193, 197, 200);
   font-family: inherit;
   color: inherit;
   display: block;
@@ -100,16 +101,31 @@ margin-bottom: 2.4rem;
   border-radius: 3px;
   font-size: 1.8rem;
   font-weight: normal;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
 }
 
-.form-group input:focus{
+.form-group input:focus {
   outline: none;
-  border: 1px solid #52A8EC;
-  box-shadow: 0 1px 1px rgba(0,0,0,.075) inset, 0 0 8px rgba(82,168,236,.6);
+  border: 1px solid #52a8ec;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(82, 168, 236, 0.6);
 }
-
-.signup-btn{
+#password-control{
+  position: relative;
+}
+#password-control span {
+  display: inline-block;
+  position: absolute;
+  background-image: url(/assets/images/lock-left-grey@3x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  top:44px;
+  right:12px;
+}
+.signup-btn {
   display: block;
   border-radius: 3px;
   font-family: inherit;
@@ -117,15 +133,14 @@ margin-bottom: 2.4rem;
   width: 100%;
   border: none;
   color: white;
-  background-color: rgb(1,119,197);
+  background-color: rgb(1, 119, 197);
   padding: 1.5rem 2rem;
   margin-top: 3rem;
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,.9);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.9);
 }
-.signup-btn img{
+.signup-btn img {
   width: 1.2rem;
-  margin-right: .8rem; 
-
+  margin-right: 0.8rem;
 }
 .tos {
   font-style: italic;
@@ -141,7 +156,7 @@ margin-bottom: 2.4rem;
 .form-footer {
   color: #8d9096;
   padding: 2rem 3rem;
-  background-color: rgb(236,238,241);
+  background-color: rgb(236, 238, 241);
   font-size: 1rem;
 }
 
@@ -149,9 +164,7 @@ margin-bottom: 2.4rem;
   font-size: inherit;
 }
 
-
-
-form{
+form {
   padding: 3rem;
 }
 
@@ -160,25 +173,25 @@ footer {
   margin: 2rem auto;
   text-align: center;
   /* color: #505050; */
-  color: rgb(80,80,96)
+  color: rgb(80, 80, 96);
 }
 
 footer ul {
-  list-style-type: none; 
+  list-style-type: none;
   display: flex;
   justify-content: center;
 }
 
-footer li a{
-  color: rgb(80,80,96);
+footer li a {
+  color: rgb(80, 80, 96);
   font-weight: normal;
 }
 
 footer ul li {
- margin-right: 1rem;
+  margin-right: 1rem;
 }
 
-.copyright{
+.copyright {
   font-size: 1.2rem;
   font-weight: normal;
 }
@@ -191,17 +204,15 @@ button:hover {
   margin: 1.3rem 4rem 0 0;
   display: flex;
   justify-content: flex-end;
- 
- }
- 
- .signin-text, .signin-text a {
+}
+
+.signin-text,
+.signin-text a {
   font-size: 1.1rem;
-  margin-right: .6rem;
- }
- 
- 
- 
- .signin-btn{
+  margin-right: 0.6rem;
+}
+
+.signin-btn {
   display: flex;
   flex-basis: 100px;
   border-radius: 3px;
@@ -209,15 +220,14 @@ button:hover {
   font-size: 1.4rem;
   border: none;
   color: white;
-  background-color: rgb(1,119,197);
+  background-color: rgb(1, 119, 197);
   /* padding: 1rem .2rem; */
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,.9);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.9);
   align-items: center;
   justify-content: center;
-  
- }
+}
 
- .signin-btn img{
-    width: 1.2rem;
-    margin-right: .8rem; 
- }
+.signin-btn img {
+  width: 1.2rem;
+  margin-right: 0.8rem;
+}
