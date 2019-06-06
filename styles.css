@@ -1,6 +1,10 @@
 /* RESET */
 
 /* @font-face('') */
+@font-face {
+  font-family: Avenir;
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
 
 * {
   padding: 0;
@@ -14,7 +18,7 @@ html{
 
 body{
   background-color: rgb(236,238,241);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Avenir, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   color: #555;
@@ -178,3 +182,39 @@ footer ul li {
 button:hover {
   cursor: pointer;
 }
+
+.right-button {
+  margin: 1.3rem 4rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+ 
+ }
+ 
+ .signin-text, .signin-text a {
+  font-size: 1.1rem;
+  margin-right: .6rem;
+ }
+ 
+ 
+ 
+ .signin-btn{
+  display: flex;
+  flex-basis: 100px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  color: white;
+  background-color: rgb(1,119,197);
+  /* padding: 1rem .2rem; */
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,.9);
+  align-items: center;
+  justify-content: center;
+  
+ }
+
+ .signin-btn img{
+    width: 1.2rem;
+    margin-right: .8rem; 
+    /* align-self: center; */
+ }
