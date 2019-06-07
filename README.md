@@ -1,9 +1,19 @@
-# Mint Signup Form Clone
-### A signup form created with native html and css 
+# HTML Signup Form
 
-Its a project for making an HTML signup form that is replica of Mint Signup Form from Intuit Corp. It has few animations added too. 
+Its an HTML signup form that is a replica of Mint Signup Form from Intuit Corp. It has few animations added too. 
 
-## Authors
-#### [@saintaze](https://github.com/saintaze) and [@imhtapm](https://github.com/imhtapm)
-It is for educational purpose only
+##### Built With
++ HTML5
++ CSS3
 
+
+# Cloned Page URL
+
+URL:  [Mint Signup Form](https://accounts.intuit.com/signup.html)
+
+# Authors
++ Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)
++ Imhtapm [https://github.com/imhtapm](https://github.com/imhtapm)
+
+# Github Page
+Live Version: 
