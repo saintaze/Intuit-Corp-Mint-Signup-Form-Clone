@@ -21,7 +21,7 @@ body {
   font-family: Avenir, Helvetica, sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
-  color: #555;
+  color: #444;
   font-weight: normal;
   letter-spacing: 0.4px;
 }
@@ -29,7 +29,9 @@ body {
 .main-wrapper {
   width: 380px;
   margin: 0 auto;
+  margin-top: 3rem;
 }
+
 .main-logo-box{
   display: flex;
   justify-content: center;
@@ -37,10 +39,31 @@ body {
 .product-logos{
   display: flex;
   justify-content: center;
-  margin: 2rem 0rem;
-  margin-top: 1.7rem;
+  margin: 1.4rem 0rem;
+  margin-top: 1rem;
+  animation: easeIn .7s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+.product-logos img{
+  height: 2.9rem;
+
+}
+
+.product-logos img:last-child{
+ height: 2.7rem;
+}
+
+.product-logos img:first-child{
+  width: 8rem;
+
+ }
+
+.product-logos img:not(:last-child){
+  margin-right: .5rem;
+}
+
 .signin-form {
+  animation: scaleUp .7s ease-out;
   padding-top: 2.5rem;
   border: 1px solid rgb(199, 199, 199);
   background-color: #fff;
@@ -62,8 +85,8 @@ h2 {
 }
 
 .signin-form h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1.7rem;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .signin-form h2 {
@@ -93,12 +116,12 @@ a:hover {
 }
 
 .form-group label {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   display: block;
   text-align: start;
   font-family: inherit;
   font-weight: normal;
-  margin-bottom: 1.2rem;
+  margin-bottom: .7rem;
 }
 
 .form-group input {
@@ -108,7 +131,7 @@ a:hover {
   display: block;
   width: 100%;
   border-radius: 3px;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: normal;
   padding: 0.6rem 1rem;
 }
@@ -131,21 +154,22 @@ a:hover {
   background-repeat: no-repeat;
   width: 2rem;
   height: 2rem;
-  top:44px;
-  right:12px;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
 }
 .signup-btn {
   display: block;
-  border-radius: 3px;
+  border-radius: 4px;
   font-family: inherit;
   font-size: 1.6rem;
   width: 100%;
   border: none;
   color: white;
   background-color: rgb(1, 119, 197);
-  padding: 1.5rem 2rem;
+  padding: 1.1rem 2rem;
   margin-top: 3rem;
-  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 1px .6px 0px rgba(0, 0, 0, 0.9);
 }
 .signup-btn img {
   width: 1.2rem;
@@ -210,7 +234,7 @@ button:hover {
 }
 
 .right-button {
-  margin: 1.3rem 4rem 0 0;
+  margin: 1.1rem 3.3rem 0 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -231,7 +255,7 @@ button:hover {
   color: white;
   background-color: rgb(1, 119, 197);
   /* padding: 1rem .2rem; */
-  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 1px .6px 0px rgba(0, 0, 0, 0.9);
   align-items: center;
   justify-content: center;
 }
@@ -245,5 +269,29 @@ button:hover {
 @media only screen and (max-width: 500px) {
   .right-button{
     display: none;
+  }
+}
+
+
+@keyframes easeIn {
+  0%{
+    opacity: 0
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes scaleUp {
+  0%{
+    opacity: 0;
+    transform: scale(.8);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
   }
 }
