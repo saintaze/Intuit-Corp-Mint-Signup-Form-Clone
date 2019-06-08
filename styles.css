@@ -1,3 +1,297 @@
-h1 {
-  color: blue;
+/* RESET */
+
+/* @font-face('') */
+@font-face {
+  font-family: Avenir;
+  src: url("/assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgb(236, 238, 241);
+  font-family: Avenir, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #444;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+}
+
+.main-wrapper {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.main-logo-box{
+  display: flex;
+  justify-content: center;
+}
+.product-logos{
+  display: flex;
+  justify-content: center;
+  margin: 1.4rem 0rem;
+  margin-top: 1rem;
+  animation: easeIn .7s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.product-logos img{
+  height: 2.9rem;
+
+}
+
+.product-logos img:last-child{
+ height: 2.7rem;
+}
+
+.product-logos img:first-child{
+  width: 8rem;
+
+ }
+
+.product-logos img:not(:last-child){
+  margin-right: .5rem;
+}
+
+.signin-form {
+  animation: scaleUp .7s ease-out;
+  padding-top: 2.5rem;
+  border: 1px solid rgb(199, 199, 199);
+  background-color: #fff;
+  text-align: center;
+
+  border-radius: 2px;
+}
+
+.signin-form > a {
+  display: block;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+.signin-form h1,
+h2 {
+  font-weight: normal;
+  color: #444;
+}
+
+.signin-form h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.signin-form h2 {
+  font-size: 1.3rem;
+  color: #666;
+}
+
+a {
+  text-decoration: none;
+  color: #0077c5;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.form-group {
+  margin-bottom: 2.4rem;
+}
+
+.form-group small {
+  margin-top: 0.5rem;
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.form-group label {
+  font-size: 1.4rem;
+  display: block;
+  text-align: start;
+  font-family: inherit;
+  font-weight: normal;
+  margin-bottom: .7rem;
+}
+
+.form-group input {
+  border: 1px solid rgb(193, 197, 200);
+  font-family: inherit;
+  color: inherit;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 1.7rem;
+  font-weight: normal;
+  padding: 0.6rem 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border: 1px solid #52a8ec;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(82, 168, 236, 0.6);
+}
+#password-control{
+  position: relative;
+}
+#password-control span {
+  display: inline-block;
+  position: absolute;
+  background-image: url(/assets/images/lock-left-grey@3x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+.signup-btn {
+  display: block;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: rgb(1, 119, 197);
+  padding: 1.1rem 2rem;
+  margin-top: 3rem;
+  box-shadow: 1px 1px .6px 0px rgba(0, 0, 0, 0.9);
+}
+.signup-btn img {
+  width: 1.2rem;
+  margin-right: 0.8rem;
+}
+.tos {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 3rem auto;
+  color: #757575;
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  width: 85%;
+  margin-bottom: 0;
+}
+
+.form-footer {
+  color: #8d9096;
+  padding: 2rem 3rem;
+  background-color: rgb(236, 238, 241);
+  font-size: 1rem;
+}
+
+.form-footer a {
+  font-size: inherit;
+}
+
+form {
+  padding: 3rem;
+}
+
+footer {
+  width: 60%;
+  margin: 2rem auto;
+  text-align: center;
+  /* color: #505050; */
+  color: rgb(80, 80, 96);
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer li a {
+  color: rgb(80, 80, 96);
+  font-weight: normal;
+}
+
+footer ul li {
+  margin-right: 1rem;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.right-button {
+  margin: 1.1rem 3.3rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signin-text,
+.signin-text a {
+  font-size: 1.1rem;
+  margin-right: 0.6rem;
+}
+
+.signin-btn {
+  display: flex;
+  flex-basis: 100px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.4rem;
+  border: none;
+  color: white;
+  background-color: rgb(1, 119, 197);
+  /* padding: 1rem .2rem; */
+  box-shadow: 1px 1px .6px 0px rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-btn img {
+  width: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .right-button{
+    display: none;
+  }
+}
+
+
+@keyframes easeIn {
+  0%{
+    opacity: 0
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes scaleUp {
+  0%{
+    opacity: 0;
+    transform: scale(.8);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
