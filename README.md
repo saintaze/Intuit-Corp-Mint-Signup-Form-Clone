@@ -6,9 +6,9 @@ Its an HTML signup form that is a replica of Mint Signup Form from Intuit Corp. 
 + HTML5
 + CSS3
 
-
+ 
 # Cloned Page URL
-
+[live preview](https://html-signup-form.imhta.now.sh)
 URL:  [Mint Signup Form](https://accounts.intuit.com/signup.html)
 
 # Authors
