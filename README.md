@@ -8,8 +8,8 @@ Its an HTML signup form that is a replica of Mint Signup Form from Intuit Corp. 
 
  
 # Cloned Page URL
-Clone URL: [live preview](https://html-signup-form.imhta.now.sh)
-Original URL:  [Mint Signup Form](https://accounts.intuit.com/signup.html)
+#### Clone URL: [live preview](https://html-signup-form.imhta.now.sh)
+#### Original URL:  [Mint Signup Form](https://accounts.intuit.com/signup.html)
 
 # Authors
 + Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)
