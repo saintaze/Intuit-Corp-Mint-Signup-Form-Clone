@@ -1,6 +1,6 @@
 # Intuit Corp Mint Signup Form Clone
 
-Its an HTML signup form that is a clone of Mint Signup Form from Intuit Corp. It has a few animations added too. 
+It's Intuit Corp Mint Signup Form Clone. 
 
 ##### Built With
 + HTML5
